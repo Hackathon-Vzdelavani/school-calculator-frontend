@@ -1,14 +1,38 @@
 import React from 'react';
 import './App.css';
+import { SCHOOLS, SUBJECTS } from './data';
 
 function App() {
+    const [preferences, setPreferences] = React.useState<
+        Partial<Record<keyof typeof SUBJECTS, number>>
+    >({});
+
     return (
-        <div className="App">
-            {[1, 2, 3, 5, 6, 7, 8, 9, 10].map((key) => (
-                <div key={key}>
-                    Matematika: <input type="range" />
-                </div>
-            ))}
+        <div className="App" style={{ display: 'flex' }}>
+            <div>
+                {Object.entries(SUBJECTS).map(([key, name]) => (
+                    <div key={key}>
+                        {name}
+                        <input
+                            type="range"
+                            min={0}
+                            max={1}
+                            step={0.01}
+                            onChange={(event) => {
+                                setPreferences({
+                                    [key]: event.target.value,
+                                });
+                            }}
+                        />
+                    </div>
+                ))}
+            </div>
+
+            <div>
+                {Object.keys(SCHOOLS).map((key) => (
+                    <div key={key}>Skola {key}</div>
+                ))}
+            </div>
         </div>
     );
 }
