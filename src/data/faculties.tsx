@@ -1,8 +1,9 @@
-import { COURSES } from './courses';
-
 export const FACULTIES: Record<
     string,
-    { name: string; courses: Record<keyof typeof COURSES, number> }
+    {
+        name: string | null;
+        courses: Record<string /*keyof typeof COURSES*/, number>;
+    }
 > = {
     KFY: {
         name: null,

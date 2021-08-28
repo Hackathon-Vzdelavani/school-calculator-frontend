@@ -1,18 +1,21 @@
 import React from 'react';
 import './App.css';
-import { SCHOOLS, SUBJECTS } from './data';
+import { COURSES } from './data/courses';
+import { FACULTIES } from './data/faculties';
 
 export function App() {
     const [preferences, setPreferences] = React.useState<
-        Partial<Record<keyof typeof SUBJECTS, number>>
+        Partial<Record<keyof typeof COURSES, number>>
     >({});
 
     return (
         <div className="App" style={{ display: 'flex' }}>
             <div>
-                {Object.entries(SUBJECTS).map(([key, name]) => (
+                {Object.entries(COURSES).map(([key, courseName]) => (
                     <div key={key}>
-                        {name}
+                        <div style={{ display: 'inline-block', width: 500 }}>
+                            {courseName} ({key})
+                        </div>
                         <input
                             type="range"
                             min={-1}
@@ -21,6 +24,7 @@ export function App() {
                             defaultValue={0}
                             onChange={(event) => {
                                 setPreferences({
+                                    ...preferences,
                                     [key]: parseFloat(event.target.value),
                                 });
                             }}
@@ -29,12 +33,12 @@ export function App() {
                 ))}
             </div>
 
-            <div>
-                {Object.entries(SCHOOLS)
-                    .map(([key, school]) => ({
+            <div style={{ position: 'fixed', right: 0 }}>
+                {Object.entries(FACULTIES)
+                    .map(([key, faculty]) => ({
                         key,
-                        school,
-                        match: Object.entries(school.subjects).reduce(
+                        faculty,
+                        match: Object.entries(faculty.courses).reduce(
                             (match, [subjectKey, credits]) =>
                                 match +
                                 ((preferences as any)[subjectKey] || 0) *
@@ -43,14 +47,14 @@ export function App() {
                         ),
                     }))
                     .sort(({ match: a }, { match: b }) => (a < b ? 1 : -1))
-                    .map(({ key, school, match }) => (
+                    .map(({ key, faculty, match }) => (
                         <div
                             key={key}
                             onClick={() => {
                                 // alert(match);
                             }}
                         >
-                            {school.title}
+                            {faculty.name} ({key}) ({match})
                         </div>
                     ))}
             </div>
