@@ -20,7 +20,7 @@ function App() {
                             step={0.01}
                             onChange={(event) => {
                                 setPreferences({
-                                    [key]: event.target.value,
+                                    [key]: parseFloat(event.target.value),
                                 });
                             }}
                         />
@@ -30,7 +30,14 @@ function App() {
 
             <div>
                 {Object.keys(SCHOOLS).map((key) => (
-                    <div key={key}>Skola {key}</div>
+                    <div
+                        key={key}
+                        onClick={() => {
+                            // alert(123);
+                        }}
+                    >
+                        Skola {key}
+                    </div>
                 ))}
             </div>
         </div>
