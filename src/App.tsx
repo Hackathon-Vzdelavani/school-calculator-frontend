@@ -34,6 +34,9 @@ export function App() {
                                     [key]: parseFloat(event.target.value),
                                 });
                             }}
+                            style={{
+                                backgroundColor: '#906090',
+                            }}
                         />
                     </div>
                 ))}
