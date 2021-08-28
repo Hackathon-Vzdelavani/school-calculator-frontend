@@ -1,6 +1,6 @@
 {
     "KFY": {
-        "name": null,
+        "name": "Katedry fyziky",
         "courses": {
             "AFY": 5,
             "AJF": 4,
@@ -74,7 +74,7 @@
         }
     },
     "KGM": {
-        "name": null,
+        "name": "Katedra geomatiky",
         "courses": {
             "AGI": 4,
             "APA": 3,
@@ -165,7 +165,7 @@
         }
     },
     "KIV": {
-        "name": null,
+        "name": "Katedra informatiky",
         "courses": {
             "ACG": 6,
             "ACS": 0,
@@ -378,7 +378,7 @@
         }
     },
     "KKY": {
-        "name": null,
+        "name": "Katedra kybernetiky",
         "courses": {
             "AGT": 6,
             "AKS": 4,
@@ -506,7 +506,7 @@
         }
     },
     "KMA": {
-        "name": null,
+        "name": "Katedra Matematiky",
         "courses": {
             "ADZ": 3,
             "AGE": 0,
@@ -732,7 +732,7 @@
         }
     },
     "KME": {
-        "name": null,
+        "name": "Katedra mechaniky",
         "courses": {
             "ABIM": 2,
             "ADAM": 3,

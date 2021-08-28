@@ -47,14 +47,14 @@ export function App() {
                         ),
                     }))
                     .sort(({ match: a }, { match: b }) => (a < b ? 1 : -1))
-                    .map(({ key, faculty, match }) => (
+                    .map(({ key, faculty, match }, i) => (
                         <div
                             key={key}
                             onClick={() => {
                                 // alert(match);
                             }}
                         >
-                            {faculty.name} ({key}) ({match})
+                            {i + 1}) {faculty.name}
                         </div>
                     ))}
             </div>

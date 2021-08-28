@@ -6,7 +6,7 @@ export const FACULTIES: Record<
     }
 > = {
     KFY: {
-        name: null,
+        name: 'Katedry fyziky',
         courses: {
             AFY: 5,
             AJF: 4,
@@ -80,7 +80,7 @@ export const FACULTIES: Record<
         },
     },
     KGM: {
-        name: null,
+        name: 'Katedra geomatiky',
         courses: {
             AGI: 4,
             APA: 3,
@@ -171,7 +171,7 @@ export const FACULTIES: Record<
         },
     },
     KIV: {
-        name: null,
+        name: 'Katedra informatiky',
         courses: {
             ACG: 6,
             ACS: 0,
@@ -384,7 +384,7 @@ export const FACULTIES: Record<
         },
     },
     KKY: {
-        name: null,
+        name: 'Katedra kybernetiky',
         courses: {
             AGT: 6,
             AKS: 4,
@@ -512,7 +512,7 @@ export const FACULTIES: Record<
         },
     },
     KMA: {
-        name: null,
+        name: 'Katedra Matematiky',
         courses: {
             ADZ: 3,
             AGE: 0,
@@ -738,7 +738,7 @@ export const FACULTIES: Record<
         },
     },
     KME: {
-        name: null,
+        name: 'Katedra mechaniky',
         courses: {
             ABIM: 2,
             ADAM: 3,
