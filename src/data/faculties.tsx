@@ -512,7 +512,7 @@ export const FACULTIES: Record<
         },
     },
     KMA: {
-        name: 'Katedra Matematiky',
+        name: 'Katedra matematiky',
         courses: {
             ADZ: 3,
             AGE: 0,
