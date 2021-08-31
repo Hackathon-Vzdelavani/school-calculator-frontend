@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/school-calculator-frontend/static/css/main.5f83045c.chunk.css",
-    "main.js": "/school-calculator-frontend/static/js/main.2a4016c3.chunk.js",
-    "main.js.map": "/school-calculator-frontend/static/js/main.2a4016c3.chunk.js.map",
-    "runtime-main.js": "/school-calculator-frontend/static/js/runtime-main.c9910a35.js",
-    "runtime-main.js.map": "/school-calculator-frontend/static/js/runtime-main.c9910a35.js.map",
-    "static/js/2.fbd4ec9c.chunk.js": "/school-calculator-frontend/static/js/2.fbd4ec9c.chunk.js",
-    "static/js/2.fbd4ec9c.chunk.js.map": "/school-calculator-frontend/static/js/2.fbd4ec9c.chunk.js.map",
-    "static/js/3.ccca0961.chunk.js": "/school-calculator-frontend/static/js/3.ccca0961.chunk.js",
-    "static/js/3.ccca0961.chunk.js.map": "/school-calculator-frontend/static/js/3.ccca0961.chunk.js.map",
+    "main.css": "/school-calculator-frontend/static/css/main.586bc274.chunk.css",
+    "main.js": "/school-calculator-frontend/static/js/main.fc1befbe.chunk.js",
+    "main.js.map": "/school-calculator-frontend/static/js/main.fc1befbe.chunk.js.map",
+    "runtime-main.js": "/school-calculator-frontend/static/js/runtime-main.4fd916b4.js",
+    "runtime-main.js.map": "/school-calculator-frontend/static/js/runtime-main.4fd916b4.js.map",
+    "static/js/2.31914431.chunk.js": "/school-calculator-frontend/static/js/2.31914431.chunk.js",
+    "static/js/2.31914431.chunk.js.map": "/school-calculator-frontend/static/js/2.31914431.chunk.js.map",
+    "static/js/3.1747405a.chunk.js": "/school-calculator-frontend/static/js/3.1747405a.chunk.js",
+    "static/js/3.1747405a.chunk.js.map": "/school-calculator-frontend/static/js/3.1747405a.chunk.js.map",
     "index.html": "/school-calculator-frontend/index.html",
-    "static/css/main.5f83045c.chunk.css.map": "/school-calculator-frontend/static/css/main.5f83045c.chunk.css.map",
-    "static/js/2.fbd4ec9c.chunk.js.LICENSE.txt": "/school-calculator-frontend/static/js/2.fbd4ec9c.chunk.js.LICENSE.txt"
+    "static/css/main.586bc274.chunk.css.map": "/school-calculator-frontend/static/css/main.586bc274.chunk.css.map",
+    "static/js/2.31914431.chunk.js.LICENSE.txt": "/school-calculator-frontend/static/js/2.31914431.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c9910a35.js",
-    "static/js/2.fbd4ec9c.chunk.js",
-    "static/css/main.5f83045c.chunk.css",
-    "static/js/main.2a4016c3.chunk.js"
+    "static/js/runtime-main.4fd916b4.js",
+    "static/js/2.31914431.chunk.js",
+    "static/css/main.586bc274.chunk.css",
+    "static/js/main.fc1befbe.chunk.js"
   ]
 }
