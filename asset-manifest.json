@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.5f83045c.chunk.css",
-    "main.js": "/static/js/main.2a4016c3.chunk.js",
-    "main.js.map": "/static/js/main.2a4016c3.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.541d8636.js",
-    "runtime-main.js.map": "/static/js/runtime-main.541d8636.js.map",
-    "static/js/2.fbd4ec9c.chunk.js": "/static/js/2.fbd4ec9c.chunk.js",
-    "static/js/2.fbd4ec9c.chunk.js.map": "/static/js/2.fbd4ec9c.chunk.js.map",
-    "static/js/3.ccca0961.chunk.js": "/static/js/3.ccca0961.chunk.js",
-    "static/js/3.ccca0961.chunk.js.map": "/static/js/3.ccca0961.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.5f83045c.chunk.css.map": "/static/css/main.5f83045c.chunk.css.map",
-    "static/js/2.fbd4ec9c.chunk.js.LICENSE.txt": "/static/js/2.fbd4ec9c.chunk.js.LICENSE.txt"
+    "main.css": "/school-calculator-frontend/static/css/main.5f83045c.chunk.css",
+    "main.js": "/school-calculator-frontend/static/js/main.2a4016c3.chunk.js",
+    "main.js.map": "/school-calculator-frontend/static/js/main.2a4016c3.chunk.js.map",
+    "runtime-main.js": "/school-calculator-frontend/static/js/runtime-main.c9910a35.js",
+    "runtime-main.js.map": "/school-calculator-frontend/static/js/runtime-main.c9910a35.js.map",
+    "static/js/2.fbd4ec9c.chunk.js": "/school-calculator-frontend/static/js/2.fbd4ec9c.chunk.js",
+    "static/js/2.fbd4ec9c.chunk.js.map": "/school-calculator-frontend/static/js/2.fbd4ec9c.chunk.js.map",
+    "static/js/3.ccca0961.chunk.js": "/school-calculator-frontend/static/js/3.ccca0961.chunk.js",
+    "static/js/3.ccca0961.chunk.js.map": "/school-calculator-frontend/static/js/3.ccca0961.chunk.js.map",
+    "index.html": "/school-calculator-frontend/index.html",
+    "static/css/main.5f83045c.chunk.css.map": "/school-calculator-frontend/static/css/main.5f83045c.chunk.css.map",
+    "static/js/2.fbd4ec9c.chunk.js.LICENSE.txt": "/school-calculator-frontend/static/js/2.fbd4ec9c.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.541d8636.js",
+    "static/js/runtime-main.c9910a35.js",
     "static/js/2.fbd4ec9c.chunk.js",
     "static/css/main.5f83045c.chunk.css",
     "static/js/main.2a4016c3.chunk.js"
