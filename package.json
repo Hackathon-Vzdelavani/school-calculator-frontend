@@ -21,7 +21,7 @@
         "build": "react-scripts build",
         "test": "react-scripts test",
         "eject": "react-scripts eject",
-        "postversion": "git push && npm run build && gh-pages -d ./dist"
+        "postversion": "git push && npm run build && gh-pages -d ./build"
     },
     "eslintConfig": {
         "extends": [
