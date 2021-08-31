@@ -22,4 +22,6 @@ jobs:
               run: npm run build
 
             - name: Deploy on GitHub pages
-              run: npx gh-pages --dist ./build --user me@pavolhejny.com
+              run: npx gh-pages --dist ./build --user ${{ secrets.GITHUB_TOKEN }}
+              with:
+                  repo-token: ${{ secrets.GITHUB_TOKEN }}
