@@ -1,5 +1,7 @@
+import { debounce } from 'lodash';
 import React from 'react';
 import './App.css';
+import { SmileRange } from './components/SmileRange';
 import { COURSES } from './data/courses';
 import { FACULTIES } from './data/faculties';
 
@@ -8,41 +10,65 @@ export function App() {
         Partial<Record<keyof typeof COURSES, number>>
     >({});
 
+    const setPreference = debounce(
+        ({ key, value }: { key: string; value: number }) => {
+            setPreferences({
+                ...preferences,
+                [key]: value,
+            });
+        },
+        100,
+    );
+
     return (
         <div className="App" style={{ display: 'flex' }}>
             <div>
                 {Object.entries(COURSES).map(([key, courseName]) => (
-                    <div key={key}>
+                    <div
+                        key={key}
+                        style={{
+                            display: 'block',
+                            height: 50,
+                        }}
+                    >
                         <div
                             style={{
                                 display: 'inline-block',
-                                textAlign: 'left',
+                                textAlign: 'right',
+                                marginRight: 20,
                                 width: 400,
                             }}
                         >
                             {courseName} <i>({key})</i>
                         </div>
-                        <input
-                            type="range"
+
+                        <SmileRange
                             min={-1}
                             max={1}
                             step={0.01}
-                            defaultValue={0}
-                            onChange={(event) => {
-                                setPreferences({
-                                    ...preferences,
-                                    [key]: parseFloat(event.target.value),
-                                });
-                            }}
-                            style={{
-                                backgroundColor: '#906090',
+                            defaultValue={(preferences as any)[key] || 0}
+                            onChange={(value) => {
+                                setPreference({ key, value });
                             }}
                         />
                     </div>
                 ))}
             </div>
 
-            <div style={{ position: 'fixed', right: 10, textAlign: 'left' }}>
+            <div
+                style={{
+                    position: 'fixed',
+                    top: 0,
+                    right: 0,
+                    height: '100vh',
+                    width: '30vw',
+                    padding: 10,
+                    textAlign: 'left',
+                    backgroundColor: '#632e72',
+                    fontSize: '1.2em',
+                    color: 'white',
+                }}
+            >
                 {Object.entries(FACULTIES)
                     .map(([key, faculty]) => ({
                         key,
