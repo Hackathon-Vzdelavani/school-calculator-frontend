@@ -15,14 +15,11 @@ jobs:
                   # TODO: Update in future to 16 + make workflow how to update this dependency
                   node-version: '14'
 
-            - name: Install production dependencies
-              run: npm install --no-fund --only=production
-
-            - name: Install development dependencies
-              run: npm install --no-fund --only=development
+            - name: Install dependencies
+              run: npm install --no-fund
 
             - name: Build
               run: npm run build
 
             - name: Deploy on GitHub pages
-              run: gh-pages -d ./build
+              run: npx gh-pages -d ./build
