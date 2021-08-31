@@ -22,7 +22,9 @@ jobs:
               run: npm run build
 
             - name: Configurate GIT
-              run: git config --global user.email "me@pavolhejny.com" && git config --global user.name "hejny"
+              run: |
+                  git config --global user.email "me@pavolhejny.com"
+                  git config --global user.name "hejny"
 
             - name: Deploy on GitHub pages
-              run: npx gh-pages --dist ./build --repo https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/Hackathon-Vzdelavani/school-calculator-frontend.git
+              run: npx gh-pages --dist ./build --repo https://x-access-token:${{secrets.GITHUB_TOKEN}}@github.com/${{GITHUB_REPOSITORY}}.git
