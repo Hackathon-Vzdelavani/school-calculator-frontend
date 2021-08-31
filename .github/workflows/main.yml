@@ -22,4 +22,4 @@ jobs:
               run: npm run build
 
             - name: Deploy on GitHub pages
-              run: npx gh-pages -d ./build
+              run: npx gh-pages --dist ./build --user me@pavolhejny.com
