@@ -4,7 +4,7 @@
     "private": false,
     "homepage": "https://hackathon-vzdelavani.github.io/school-calculator-frontend/",
     "contributors": [
-      "Pavol Hejný <pavol@collboard.com> (https://pavolhejny.com)",
+      "Pavol Hejný <pavol@collboard.com> (https://pavolhejny.com)"
   ],
     "dependencies": {
         "@testing-library/jest-dom": "^5.11.4",
